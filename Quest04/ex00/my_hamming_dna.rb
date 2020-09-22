@@ -1,5 +1,5 @@
 def hamming_dna(dna_1, dna_2)
-    c = dna_1.zip(dna_2).count{|a,b| a !=b}
+    c = dna_1.zip(dna_2).count{|a,b| a !=b} #merging two arrays with zip method and counting elements that do not correspond respectively at each index corresponding elements have to be the same
     return c
     
 #   puts dna_match.each{|x|}

@@ -19,15 +19,3 @@
 #  c="|"
 # print c.center(10)
 
-class Person
-  attr_accessor :name
-  def initialize(name = 'tala')
-    @name = name
-  end
-end
-
-tala = Person.new 'yunus'
-tala.name = 'maryam'
-# puts tala.name
-
-puts @name

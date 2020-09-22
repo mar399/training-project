@@ -1,4 +1,5 @@
-require 'csv'
+require 'csv' 
+#requires csv(inbuilt library)
 class MyFirstSelect
     attr_reader :filename_db , :csv
     def initialize(filename_db)
@@ -10,15 +11,17 @@ class MyFirstSelect
         # puts row.join(",")
        end
     end
-def join(column_on_db_a,filename_db_b,column_on_db_b)
-arr=[]
-CSV.foreach(@filename_db,:headers=>true).with_index do |row ,i| 
-    CSV.foreach(filename_db_b,:headers=>true).with_index do|row2,x| 
-      if row.to_h[column_on_db_a] == row2.to_h[column_on_db_b]
-        arr << row.to_h.merge(row2.to_h)
+    def join(column_on_db_a,filename_db_b,column_on_db_b)
+      arr=[]
+      CSV.foreach(@filename_db,:headers=>true).with_index do |row ,i| 
+      CSV.foreach(filename_db_b,:headers=>true).with_index do|row2,x| 
+         if row.to_h[column_on_db_a] == row2.to_h[column_on_db_b]
+          arr << row.to_h.merge(row2.to_h)
+         end
+        end
       end
+      return arr
     end
-  end
       
   #  CSV.foreach(filename_db_b,:headers=>true).with_index do |row2,x| 
   #     row2.to_h
@@ -27,8 +30,7 @@ CSV.foreach(@filename_db,:headers=>true).with_index do |row ,i|
       # arr << row2.to_h[column_on_db_b]
     # end      
 
-  return arr 
-end
+  
 
         def where(column_name,value)
           arr=[]
@@ -37,8 +39,11 @@ end
                  if row.to_h[column_name] == value
                       arr << row.to_h
                  end
-end
+               end
+            end
+        end
 
           table1 = MyFirstSelect.new("h.csv")
           p table1.join("Player", "i.csv","Name")
+          p table1.where("name", "Joe Holland")
  

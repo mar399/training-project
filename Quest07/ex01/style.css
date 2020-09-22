@@ -1,0 +1,55 @@
+.topnav {
+    overflow: hidden;
+    background-color:#000080;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+   */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .img1{
+      width:1039px height=519px}
+
+      .text-grey {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 13px;
+    } 
+
+    .darkblue{
+
+    background-color: #355876;}
+
+    .text-grey:hover {
+      color: rgba(255,255,255,1);
+      transition: all 0.5s linear;
+  }
+  

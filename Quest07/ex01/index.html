@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f4d218d63.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="container-fluid">
+    <div>
+      <header class="blog-header py-3 container">
+        <div class="row flex-nowrap justify-content-between align-items-center container">
+          <div class="col-4 pt-1">
+            <a class="text-muted" href="#">
+              <svg width="35" height="35" viewBox="5 5 35 35" class="ao r"><path d="M5 40V5h35v35H5zm8.56-12.63c0 .56-.03.69-.32 1.03L10.8 31.4v.4h6.97v-.4L15.3 28.4c-.29-.34-.34-.5-.34-1.03v-8.95l6.13 13.36h.71l5.26-13.36v10.64c0 .3 0 .35-.19.53l-1.85 1.8v.4h9.2v-.4l-1.83-1.8c-.18-.18-.2-.24-.2-.53V15.94c0-.3.02-.35.2-.53l1.82-1.8v-.4h-6.47l-4.62 11.55-5.2-11.54h-6.8v.4l2.15 2.63c.24.3.29.37.29.77v10.35z"></path></svg>
+            </a>
+          </div>
+          <div class="col-2 d-flex justify-content-around align-items-center">
+            <a class="text-muted hidden sign-font" href="#" aria-label="Search">
+             Sign In
+            </a>
+            <a class="btn btn-sm btn-outline-info p-2 hidden sign-font" href="#">Get Started</a>
+          </div>
+        </div>
+    </header>
+
+    
+      
+    <div class="nav-scroller mb-2 p-2 darkblue nav-width">
+      <header class ="blog-header container">
+      <nav class="nav d-flex justify-content-between align-items-center ">
+        <a class="text-grey hidden" href="#todatascience" >towards <br>data science</a>
+        <a class= "text-grey hidden" href="#datascience" >DATA SCIENCE</a>
+        <a class="text-grey" href="#machinelearning" >MACHINE LEARNING</a>
+        <a class= "text-grey"href="#programming" >PROGRAMMING</a>
+        <a class="text-grey" href="#visualization" >VISUALIZATION</a>
+        <a class="text-grey" href="#video">VIDEO</a>
+        <a class="text-grey" href="#*">*</a>
+        <a class="text-grey" href="#about" >ABOUT</a>
+        <a class="text-grey" href="#contribute" >CONTRIBUTE</a>
+      
+      </nav>
+      </div>
+</div>
+
+      
+
+      <div class=" container row-sm ">
+
+        <div class="alert alert-secondary text-center">
+            You have 1 free story left this month. <a href="https://medium.com/m/signin" class="alert-link text-success">Sign up and get one for free</a>.
+        </div>
+      </div>
+     <h1 class= " d-flex justify-content-around "> 10 Common Software <br> Architectural Patterns in a <br> nutshell</h1>
+
+
+    <p> Ever wondered how large enterprise scale systems are designed? Before <br> major software development starts, we have to choose a suitable <br> architecture that will provide us with the desired functionality and quality <br> attributes. Hence, we should understand different architectures, before <br> applying them to our design.
+    </p>
+
+    <img class= "img-fluid mx-auto d-block" src= "https://miro.medium.com/max/1039/1*M22DR3WPqbWXWidYIq2GwA.png" width="1039" height="519">
+
+    <h2> What is an Architectural Pattern?</h2>
+    <p> According to Wikipedia,</p>
+    <p> An architectural pattern is a general, reusable solution to a commonly <br> occurring problem in software architecture within a given context. <br> Architectural patterns are similar to software design pattern but have a <br> broader scope. </p>
+    <ol> 
+        <li> Layered Pattern</li>
+        <li> Client-server pattern </li>
+        <li> Master-slave pattern</li>
+        <li> Pipe-filter pattern</li>
+        <li> Broker pattern</li>
+        <li> Peer-to-peer pattern</li>
+        <li> Event-bus pattern</li>
+        <li> Model-view-controller pattern</li>
+        <li> Blackboard pattern</li>
+        <li> Interpreter pattern</li>
+      </ol>
+         <h2> 1.Layered Pattern </h2>
+         <p>This pattern can be used to structure programs that can be decomposed into <br> groups of subtasks, each of which is at a particular level of abstraction. Each <br> layer provides services to the next higher layer. </p>
+         <p>The most commonly found 4 layers of a general information system are as <br>follows. </p>
+         <ul> 
+           <li> Presentation layer (also known as UI layer) </li> 
+            <li>Application layer (also known as service layer) </li>
+            <li>Business logic layer (also known as domain layer)</li>
+            <li> Data access layer (also known as persistence layer)</li>
+            
+          </ul>
+
+            <h3> Usage</h3>
+
+          <ul> 
+            <li> General desktop applications.</li>
+            <li> E commerce web applications.</li>
+          </ul>
+
+            <img class= "img-fluid mx-auto d-block"src = "https://miro.medium.com/max/188/1*jMWk_JqqyyloVPhTs_Zd1A.png  " alt= "Layered pattern">
+
+            <h2> 2. Client-server pattern </h2>
+            <p> This pattern consists of two parties; a server and multiple clients. The <br> server component will provide services to multiple client components.<br> Clients request services from the server and the server provides relevant <br> services to those clients. Furthermore, the server continues to listen to <br> client requests. </p>
+            <h3> Usage </h3>
+            <ul> 
+              <li> Online applications such as email, document sharing and banking.
+              </li>
+            </ul>
+            <img class= "img-fluid mx-auto d-block" src="https://miro.medium.com/max/284/1*4xX_WQQuD2u0PMK5bcWFkQ.png " alt=" Client-server pattern">
+
+            <h2> 3. Master-slave pattern</h2>
+            <p> This pattern consists of two parties; master and slaves. The master <br> component distributes the work among identical slave components, and <br> computes a final result from the results which the slaves return. </p>
+            <h3> Usage</h3>
+            <ul> 
+                <li> In database replication, the master database is regarded as the authoritative source, and the slave databases are synchronized to it. </li>
+                <li> Peripherals connected to a bus in a computer system (master and slave drives).
+                </li>
+            </ul>
+            <img class= "img-fluid mx-auto d-block" src="https://miro.medium.com/max/542/1*lsK9QntZl2d5oLojwRGXDg.png" alt="Master-slave pattern">
+
+            
+            <h2> 4. Pipe Filter Pattern</h2>
+            <p> This pattern can be used to structure systems which produce and process a <br>stream of data. Each processing step is enclosed within a filter component. <br> Data to be processed is passed through pipes. These pipes can be used for <br> buffering or for synchronization purposes.</p>
+            <h3> Usage</h3>
+            <ul> 
+                <li> Compilers. The consecutive filters perform lexical analysis, parsing,<br> semantic analysis, and code generation. </li>
+                <li> Workflows in bioinformatics.
+                </li>
+            </ul>
+            <img class= "img-fluid mx-auto d-block" src="https://miro.medium.com/max/796/1*qikehZcDhhl_wWsqeI_nvg.png" alt="Pipe-filter pattern">
+
+
+           <h2> 5. Broker Pattern </h2>
+          <p> This pattern is used to structure distributed systems with decoupled components. 
+            These components can interact with each other by remote service invocations. A broker component is responsible for the coordination of communication among components.
+    Servers publish their capabilities (services and characteristics) to a broker. Clients request a service from the broker, and the broker then redirects the client to a suitable service from its registry.  </p>
+
+         <h3>  Usage </h3>
+         <ul> 
+           <li> Message broker software such as Apache ActiveMQ, Apache Kafka, <br> RabbitMQ and JBoss Messaging.
+           </li>
+          </ul>
+         <img class= "img-fluid mx-auto d-block" src= "https://miro.medium.com/max/704/1*1qRQZjLRAd0yY_T9p2OgBw.png" >
+         <h2> 6. Peer-to-peer pattern</h2>
+         <p>In this pattern, individual components are known as peers. Peers may <br> function both as a client, requesting services from other peers, and as a <br> server, providing services to other peers. A peer may act as a client or as a <br>server or as both, and it can change its role dynamically with time. </p>
+         <h3> Usage</h3>
+         <ul> 
+           <li> File-sharing networks such as Gnutella and G2) </li>
+           <li>Multimedia protocols such as P2PTV and PDTP. </li>
+           <li> Cryptocurrency-based products such as Bitcoin and Blockchain</li>
+         </ul>
+         <img class= "img-fluid mx-auto d-block"src = "https://miro.medium.com/max/260/1*ROvkckSTw1UncrbQSmUJUQ.png">
+         <h2> 7. Event-bus pattern</h2>
+         <p> This pattern primarily deals with events and has 4 major components;<br> event source, event listener, channel and event bus. Sources publish <br> messages to particular channels on an event bus. Listeners subscribe to <br> particular channels. Listeners are notified of messages that are published to <br> a channel to which they have subscribed before. </p>
+
+        <h3> Usage</h3>
+        <ul> 
+          <li>Android development </li>
+          <li>Notification services</li>
+        </ul>
+        <img class= "img-fluid mx-auto d-block" src=" https://miro.medium.com/max/632/1*DOZ4nVR9zkJm-EnXT3KOGQ.png">
+
+        <h2> 8.Model-view-controller pattern</h2>
+        <p> This pattern, also known as MVC pattern, divides an interactive application <br> in to 3 parts as,</p> 
+        <p> 
+          <ol> 
+            <li>model — contains the core functionality and data </li> 
+            <li>view — displays the information to the user (more than one view may be defined) </li>
+            <li>controller — handles the input from the user </li>
+          </ol>
+        </p>
+
+        <p> This is done to separate internal representations of information from the <br> ways information is presented to, and accepted from, the user. It decouples <br> components and allows efficient code reuse.</p>
+
+        <h3> Usage </h3>
+        <ul> <li>Architecture for World Wide Web applications in major programming <br> languages. </li>
+        <li>Web frameworks such as Django and Rails.
+        </li></ul>
+
+        <img class= "img-fluid mx-auto d-block"src="https://miro.medium.com/max/791/1*OP0CS6O5Sb66jpc-H-IuRQ.png">
+
+    <h2>9.Blackboard pattern </h2>
+    <p>This pattern is useful for problems for which no deterministic solution <br> strategies are known.The blackboard pattern consists of 3 main<br> components. </p>
+    <ul> 
+      <li> blackboard — a structured global memory containing objects from the <br> solution space </li>
+      <li>knowledge source — specialized modules with their own <br> representation </li>
+      <li>control component — selects, configures and executes modules. </li>
+    </ul>
+    <p> All the components have access to the blackboard. Components may produce new data objects that are added to the blackboard. Components look for particular kinds of data on the blackboard, and may find these by pattern matching with the existing knowledge source.
+    </p>
+    <h3> Usage</h3>
+  <ul> 
+    <li>Speech recognition </li>
+    <li>Vehicle identification and tracking </li>
+    <li>Protein structure identification </li>
+    <li>Sonar signals interpretation.</li>
+  </ul>
+
+   <img class= "img-fluid mx-auto d-block" src="https://miro.medium.com/max/530/1*ArbMx7A21I47llvwUTiSDg.png ">
+   <h2> 10. Interpreter pattern</h2>
+   <p>This pattern is used for designing a component that interprets programs<br> written in a dedicated language. It mainly specifies how to evaluate lines of <br> programs, known as sentences or expressions written in a particular <br> language. The basic idea is to have a class for each symbol of the language. </p>
+   <h3> Usage </h3>
+   <ul> 
+     <li>Database query languages such as SQL. </li>
+     <li>Languages used to describe communication protocols. </li>
+   </ul>
+
+  <img class= "img-fluid mx-auto d-block" src="https://miro.medium.com/max/660/1*DrC3T5R4SsdcQY6aXLCRZA.png">
+  <h2 class="font-weight-bold text-center"> Comparison of Architectural Patterns</h2>
+  <p>The table given below summarizes the pros and cons of each architectural <br> pattern.</p>
+
+   <img class="img-fluid" src="https://miro.medium.com/max/2880/1*Z9dKeyf6yi0nFMaUZF1P3Q.png" width="2880" height="1612">
+   <p> Hope you found this article useful. I would love to hear your thoughts. 😇 </p>
+   <p>Thanks for reading. 😊</p>
+   <p>Cheers! 😃</p>
+
+    <h1> References </h1>
+    <a href="https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6"></a>
+  </div>
+ </body>
+</html>
