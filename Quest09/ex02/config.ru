@@ -1,1 +1,0 @@
-require "/my_first_users_app"
